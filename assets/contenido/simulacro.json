@@ -1,0 +1,263 @@
+{
+  "roles": [
+    {
+      "id": "operario",
+      "nombre": "Operario",
+      "descripcion": "Peligros de su labor, emergencias, reportes y elementos de protección."
+    },
+    {
+      "id": "supervisor",
+      "nombre": "Supervisor de obra",
+      "descripcion": "Permisos, matriz de peligros, reporte e investigación de accidentes."
+    },
+    {
+      "id": "hseq",
+      "nombre": "Coordinador HSEQ",
+      "descripcion": "Estándares mínimos, auditoría, revisión por la dirección y documentos."
+    }
+  ],
+  "preguntas": [
+    {
+      "id": "a01",
+      "roles": ["operario", "supervisor"],
+      "tema": "Peligros y riesgos",
+      "unidad": "sgsst",
+      "pregunta": "¿Dónde consulta los peligros de su área de trabajo?",
+      "opciones": ["En la matriz de peligros, publicada en la cartelera y en la app", "No sé, eso lo maneja el área SST", "En mi área no hay peligros"],
+      "correcta": 0,
+      "explicacion": "Cada trabajador debe conocer los peligros de su labor y saber dónde está la matriz de su área.",
+      "fuente": "Decreto 1072 de 2015, art. 2.2.4.6.15"
+    },
+    {
+      "id": "a02",
+      "roles": ["operario"],
+      "tema": "Peligros y riesgos",
+      "unidad": "sgsst",
+      "pregunta": "Si ve una condición insegura en su frente de trabajo, ¿qué hace?",
+      "opciones": ["La reporto de inmediato a mi supervisor o por el canal de reportes", "Sigo trabajando: no es mi responsabilidad", "Lo comento a la hora del almuerzo"],
+      "correcta": 0,
+      "explicacion": "Informar los peligros y condiciones inseguras es una obligación del trabajador.",
+      "fuente": "Decreto 1072 de 2015, art. 2.2.4.6.10"
+    },
+    {
+      "id": "a03",
+      "roles": ["operario", "supervisor"],
+      "tema": "Emergencias",
+      "unidad": "emergencias",
+      "pregunta": "¿Cuál es el punto de encuentro de esta obra?",
+      "opciones": ["Parqueadero norte, junto a la portería 2", "El sótano 1", "Cada uno sale por donde pueda"],
+      "correcta": 0,
+      "explicacion": "El punto de encuentro está definido en el plan de emergencias de la obra.",
+      "fuente": "PR-SST-004 v3, numeral 6.2"
+    },
+    {
+      "id": "a04",
+      "roles": ["operario"],
+      "tema": "SG-SST",
+      "unidad": "sgsst",
+      "pregunta": "¿Quién paga sus elementos de protección personal?",
+      "opciones": ["La empresa, sin costo para mí", "Yo los pago y luego me los reembolsan", "La ARL"],
+      "correcta": 0,
+      "explicacion": "El empleador suministra los elementos de protección personal sin costo para el trabajador.",
+      "fuente": "Decreto 1072 de 2015, art. 2.2.4.6.24"
+    },
+    {
+      "id": "a05",
+      "roles": ["operario", "supervisor"],
+      "tema": "Accidentes e incidentes",
+      "unidad": "accidentes",
+      "pregunta": "Casi le cae una herramienta a un compañero, pero no lo golpeó. ¿Qué hace?",
+      "opciones": ["Lo reporto como incidente para que se investigue", "Nada: no pasó nada", "Solo lo reporto si vuelve a pasar"],
+      "correcta": 0,
+      "explicacion": "Los incidentes se reportan e investigan para evitar el próximo accidente.",
+      "fuente": "Res. 1401 de 2007, art. 4"
+    },
+    {
+      "id": "a06",
+      "roles": ["operario", "supervisor"],
+      "tema": "Trabajo en alturas",
+      "unidad": "alturas",
+      "pregunta": "Le piden subir a un andamio de 3 metros y su certificado de alturas está vencido. ¿Qué hace?",
+      "opciones": ["No subo y aviso al coordinador de trabajo en alturas", "Subo con cuidado porque es rápido", "Subo si un compañero me sostiene la escalera"],
+      "correcta": 0,
+      "explicacion": "Sin formación vigente no se puede trabajar en alturas, sin importar cuánto dure la tarea.",
+      "fuente": "Res. 4272 de 2021"
+    },
+    {
+      "id": "a07",
+      "roles": ["operario"],
+      "tema": "SG-SST",
+      "unidad": "sgsst",
+      "pregunta": "¿Para qué sirve el COPASST?",
+      "opciones": ["Promueve y vigila el cumplimiento de las normas de SST en la empresa", "Sanciona a los trabajadores", "Define los salarios"],
+      "correcta": 0,
+      "explicacion": "El comité promueve, vigila y propone medidas de seguridad y salud en el trabajo.",
+      "fuente": "Resolución 2013 de 1986, art. 11"
+    },
+    {
+      "id": "a08",
+      "roles": ["operario", "supervisor"],
+      "tema": "Ambiente",
+      "unidad": "ambiental",
+      "pregunta": "¿Dónde dispone un envase de pintura vacío?",
+      "opciones": ["En el punto de residuos peligrosos (RESPEL)", "En la caneca negra", "Con los escombros"],
+      "correcta": 0,
+      "explicacion": "Los envases que contuvieron sustancias peligrosas se manejan como RESPEL.",
+      "fuente": "Decreto 1076 de 2015"
+    },
+    {
+      "id": "a09",
+      "roles": ["supervisor", "hseq"],
+      "tema": "Peligros y riesgos",
+      "unidad": "sgsst",
+      "pregunta": "¿Cada cuánto se actualiza la matriz de peligros?",
+      "opciones": ["Como mínimo una vez al año y cuando hay cambios o accidentes graves", "Solo cuando hay un accidente mortal", "Cada cinco años"],
+      "correcta": 0,
+      "explicacion": "La identificación de peligros se actualiza al menos una vez al año y cada vez que cambian los procesos o hay un evento grave.",
+      "fuente": "Decreto 1072 de 2015, art. 2.2.4.6.15"
+    },
+    {
+      "id": "a10",
+      "roles": ["supervisor"],
+      "tema": "Trabajo en alturas",
+      "unidad": "alturas",
+      "pregunta": "Antes de que su cuadrilla trabaje en la cubierta, ¿qué debe estar listo?",
+      "opciones": ["El permiso de trabajo en alturas firmado y los equipos inspeccionados", "Solo los arneses", "Nada, si el trabajo es rápido"],
+      "correcta": 0,
+      "explicacion": "El permiso y la inspección de equipos van antes de cualquier exposición al riesgo de caída.",
+      "fuente": "Res. 4272 de 2021"
+    },
+    {
+      "id": "a11",
+      "roles": ["supervisor", "hseq"],
+      "tema": "Accidentes e incidentes",
+      "unidad": "accidentes",
+      "pregunta": "Un trabajador se fracturó la mano hoy. ¿Qué plazo hay para reportarlo a la ARL?",
+      "opciones": ["Dos días hábiles", "Quince días", "Un mes"],
+      "correcta": 0,
+      "explicacion": "El accidente se reporta a la ARL y a la EPS dentro de los dos días hábiles siguientes.",
+      "fuente": "Decreto 1295 de 1994, art. 62; Res. 156 de 2005"
+    },
+    {
+      "id": "a12",
+      "roles": ["supervisor", "hseq"],
+      "tema": "Accidentes e incidentes",
+      "unidad": "accidentes",
+      "pregunta": "¿Quiénes deben participar en la investigación del accidente?",
+      "opciones": ["El jefe inmediato, el COPASST y el responsable del SG-SST", "Solo la ARL", "Solo el trabajador lesionado"],
+      "correcta": 0,
+      "explicacion": "El equipo investigador mínimo incluye al jefe inmediato, al COPASST o vigía y al responsable del SG-SST.",
+      "fuente": "Res. 1401 de 2007, art. 7"
+    },
+    {
+      "id": "a13",
+      "roles": ["supervisor"],
+      "tema": "Emergencias",
+      "unidad": "emergencias",
+      "pregunta": "¿Cada cuánto debe hacerse un simulacro de emergencias?",
+      "opciones": ["Como mínimo una vez al año", "Cada cinco años", "Solo cuando lo pide la ARL"],
+      "correcta": 0,
+      "explicacion": "La norma exige al menos un simulacro al año.",
+      "fuente": "Decreto 1072 de 2015, art. 2.2.4.6.25"
+    },
+    {
+      "id": "a14",
+      "roles": ["supervisor"],
+      "tema": "SG-SST",
+      "unidad": "sgsst",
+      "pregunta": "¿Cómo demuestra que su personal recibió la inducción en SST?",
+      "opciones": ["Con los registros de asistencia y evaluación de la capacitación", "Con la palabra del trabajador", "No hace falta demostrarlo"],
+      "correcta": 0,
+      "explicacion": "La capacitación se documenta: el auditor pide registros, no versiones.",
+      "fuente": "Decreto 1072 de 2015, arts. 2.2.4.6.11 y 2.2.4.6.12"
+    },
+    {
+      "id": "a15",
+      "roles": ["hseq"],
+      "tema": "Estándares mínimos",
+      "unidad": "res0312",
+      "pregunta": "¿Qué resultado de la autoevaluación obliga a un plan de mejoramiento inmediato?",
+      "opciones": ["Menor al 60 % (crítico)", "Entre 60 % y 85 %", "Mayor al 85 %"],
+      "correcta": 0,
+      "explicacion": "La valoración crítica exige plan de mejoramiento inmediato y seguimiento.",
+      "fuente": "Res. 0312 de 2019, art. 28"
+    },
+    {
+      "id": "a16",
+      "roles": ["hseq"],
+      "tema": "Estándares mínimos",
+      "unidad": "res0312",
+      "pregunta": "¿Cuántos estándares mínimos aplican a esta constructora de 250 trabajadores?",
+      "opciones": ["60", "21", "7"],
+      "correcta": 0,
+      "explicacion": "Las empresas de más de 50 trabajadores cumplen los 60 estándares.",
+      "fuente": "Res. 0312 de 2019, capítulo III"
+    },
+    {
+      "id": "a17",
+      "roles": ["hseq"],
+      "tema": "SG-SST",
+      "unidad": "sgsst",
+      "pregunta": "¿Cada cuánto se audita el cumplimiento del SG-SST?",
+      "opciones": ["Por lo menos una vez al año, con participación del COPASST", "Cada tres años", "Solo si lo pide el cliente"],
+      "correcta": 0,
+      "explicacion": "La auditoría es anual, planificada y con participación del COPASST.",
+      "fuente": "Decreto 1072 de 2015, art. 2.2.4.6.29"
+    },
+    {
+      "id": "a18",
+      "roles": ["hseq"],
+      "tema": "SG-SST",
+      "unidad": "sgsst",
+      "pregunta": "¿Por cuánto tiempo se conservan los resultados de las evaluaciones médicas ocupacionales?",
+      "opciones": ["20 años desde que termina la relación laboral", "2 años", "Hasta que el trabajador los pida"],
+      "correcta": 0,
+      "explicacion": "Ciertos documentos del SG-SST se conservan por 20 años contados desde el cese de la relación laboral.",
+      "fuente": "Decreto 1072 de 2015, art. 2.2.4.6.13"
+    },
+    {
+      "id": "a19",
+      "roles": ["hseq"],
+      "tema": "Ambiente",
+      "unidad": "ambiental",
+      "pregunta": "¿Qué norma fija el código de colores para separar residuos?",
+      "opciones": ["Res. 2184 de 2019", "Res. 0312 de 2019", "Decreto 1295 de 1994"],
+      "correcta": 0,
+      "explicacion": "La Res. 2184 de 2019 unificó el código de colores: blanco, negro y verde.",
+      "fuente": "Res. 2184 de 2019"
+    },
+    {
+      "id": "a20",
+      "roles": ["hseq"],
+      "tema": "SG-SST",
+      "unidad": "sgsst",
+      "pregunta": "¿Cada cuánto revisa la alta dirección el SG-SST?",
+      "opciones": ["Por lo menos una vez al año", "Cada cinco años", "No es obligatorio"],
+      "correcta": 0,
+      "explicacion": "La alta dirección revisa el sistema como mínimo una vez al año y comunica los resultados al COPASST.",
+      "fuente": "Decreto 1072 de 2015, art. 2.2.4.6.31"
+    },
+    {
+      "id": "a21",
+      "roles": ["operario"],
+      "tema": "Emergencias",
+      "unidad": "emergencias",
+      "pregunta": "Suena una sirena continua. ¿Qué significa?",
+      "opciones": ["Evacuación: salir por la ruta señalizada al punto de encuentro", "Alerta: esperar instrucciones", "Hora del almuerzo"],
+      "correcta": 0,
+      "explicacion": "Sirena intermitente es alerta; sirena continua es evacuación.",
+      "fuente": "PR-SST-004 v3, numeral 5.1"
+    },
+    {
+      "id": "a22",
+      "roles": ["supervisor"],
+      "tema": "Ambiente",
+      "unidad": "ambiental",
+      "pregunta": "Hay un derrame pequeño de ACPM en su frente de obra. ¿Qué hace primero?",
+      "opciones": ["Detener la fuente si es seguro y contener con el kit antiderrames", "Lavarlo con agua", "Cubrirlo con tierra y seguir trabajando"],
+      "correcta": 0,
+      "explicacion": "Detener y contener evita que el combustible llegue al suelo o al alcantarillado.",
+      "fuente": "Plan de manejo ambiental de la obra"
+    }
+  ]
+}
