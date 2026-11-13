@@ -40,7 +40,8 @@ pregunta normativa con revisor SST licenciado y fecha de vigencia.
   Empresa ficticia Constructora Andina S.A.S.; usuario Andrés Gómez,
   supervisor de obra (código `ANDINA`, cédula `1020345678`). Pantallas:
   bienvenida, ruta Aprender, lección (4 tipos de pregunta), simulacro de
-  auditoría, liga y perfil con certificados.
+  auditoría, liga y perfil con certificados. APK de la demo entregado al
+  usuario; proyecto de iOS agregado para compilar en un Mac.
 - Las preguntas son **de ejemplo**: falta que el profesional SST las valide.
 - **Sigue:** Directus como servidor, panel web del líder HSEQ, carga de
   procedimientos con IA, reporte PDF de evidencia, ingreso por invitación.
@@ -54,6 +55,9 @@ pregunta normativa con revisor SST licenciado y fecha de vigencia.
 
 ## Detalles técnicos
 
+- Identificadores: Android `com.valkiriacode.diver_ley`, iOS
+  `com.valkiriacode.diverLey` (iOS no acepta `_`). El iPhone se compila en
+  un Mac; en el iPhone solo se permite vertical.
 - Las fuentes Rubik y Nunito Sans son variables: `rubik()` y `nunito()` en
   `lib/tema.dart` aplican el peso también como `FontVariation`.
 - `relojProvider` da la hora; las pruebas lo reemplazan para controlar la

@@ -66,6 +66,29 @@ depuración, suficiente para la demo):
 flutter build apk --release
 ```
 
+### Instalar la demo en un celular
+
+**Android:** instalar el APK (`flutter build apk --release`). Al abrirlo,
+Android pide permitir "instalar apps desconocidas" y Play Protect puede
+avisar que no viene de Play Store ("Instalar de todas formas"). Con el
+celular conectado por USB y la depuración USB activa también sirve
+`flutter run --release`.
+
+**iPhone:** se compila en un Mac con Xcode (en Linux o Windows no se puede):
+
+1. `flutter pub get` y abrir `ios/Runner.xcworkspace` en Xcode.
+2. En *Runner → Signing & Capabilities*, elegir el equipo (un Apple ID
+   gratis sirve) y, si Xcode lo pide, cambiar el *Bundle Identifier*
+   (hoy `com.valkiriacode.diverLey`).
+3. Conectar el iPhone, activar el Modo de desarrollador (*Ajustes →
+   Privacidad y seguridad*) y correr `flutter run --release`.
+4. En el iPhone, confiar en el desarrollador (*Ajustes → General → VPN y
+   gestión de dispositivos*).
+
+Con un Apple ID gratis la app deja de abrir a los 7 días y hay que volver a
+instalarla. Para entregarla al cliente sin cable se usa TestFlight, que
+necesita la cuenta de Apple Developer (US$ 99 al año).
+
 Versión web (sirve para mostrarla en un computador):
 
 ```bash
